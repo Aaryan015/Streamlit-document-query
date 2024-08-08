@@ -45,11 +45,7 @@ This application allows users to query documents to answer their questions. It s
    
 3. Install the dependencies
    ```sh
-   pip install streamlit pandas sqlalchemy cryptography PyPDF2 python-docx
-*or*
-   ```sh
    pip install -r requirements.txt
-   ```
 
 4. Run the application
    ```sh
