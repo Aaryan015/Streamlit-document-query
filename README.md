@@ -46,4 +46,4 @@ This application allows users to query documents to answer their questions. It s
 - Upload new documents using the document upload feature in the application.
 
 ### Deployment
-- Deploy the application using your preferred platform. Ensure to update the database URL and secrets accordingly.
+- Deploy the application using your preferred platform. Please ensure to update the database URL and secrets accordingly.
