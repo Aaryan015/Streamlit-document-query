@@ -28,8 +28,7 @@ This application allows users to query documents to answer their questions. It s
    ```
    Note: If you encounter an error like this:
    ```
-   running scripts is disabled on this 
-   system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+   running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
    At line:1 char:1
    + venv\Scripts\activate
    ```
