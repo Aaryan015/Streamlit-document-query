@@ -24,7 +24,25 @@ This application allows users to query documents to answer their questions. It s
 2. Set up the virtual environment
    ```sh
    python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate
+   ```
+   Note: If you encounter an error like this:
+   ```
+   running scripts is disabled on this 
+   system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+   At line:1 char:1
+   + venv\Scripts\activate
+   ```
+   Follow these steps:
+   1. Open PowerShell as Administrator and change the execution policy:
+   ```sh
+      Set-ExecutionPolicy RemoteSigned
+   ```
+   2. Type Y and press Enter.
+
+   3. Activate the Virtual Environment:
+   ```sh
+   venv\Scripts\Activate.ps1
    
 3. Install the dependencies
    ```sh
