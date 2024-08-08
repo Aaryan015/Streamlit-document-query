@@ -50,6 +50,8 @@ This application allows users to query documents to answer their questions. It s
 4. Run the application
    ```sh
    streamlit run app.py
+   ```
+   ![refresh page](https://github.com/Aaryan015/Streamlit-document-query/blob/main/UI.png?raw=true)
 
 ### Security
 - Data is encrypted using the cryptography library.
