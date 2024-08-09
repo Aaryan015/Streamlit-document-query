@@ -21,6 +21,12 @@ session = Session()
 
 # Encryption setup
 key = Fernet.generate_key()
+with open("secret.key", "wb") as key_file:
+    key_file.write(key)
+
+with open("secret.key", "rb") as key_file:
+    key = key_file.read()
+
 cipher_suite = Fernet(key)
 
 # Models
@@ -100,9 +106,16 @@ def get_user_history(user):
 # Function to save history to file
 def save_history_to_file(user):
     history = get_user_history(user)
-    with open(f"{user}_history.txt", "w") as file:
-        for record in history:
-            file.write(f"Query: {record.query}\nResponse: {record.response}\n\n")
+    if not history:
+        with open(f"{user}_history.txt", "w") as file:
+            file.write("No history available.")
+    else:
+        try:
+            with open(f"{user}_history.txt", "w") as file:
+                for record in history:
+                    file.write(f"Query: {str(record.query)}\nResponse: {str(record.response)}\n\n")
+        except Exception as e:
+            print(f"Error saving history to file: {e}")
 
 # Streamlit UI
 st.title("Document Query Application")
