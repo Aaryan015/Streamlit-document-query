@@ -62,3 +62,5 @@ This application allows users to query documents to answer their questions. It s
 
 ### Deployment
 - Deploy the application using your preferred platform. Please ensure to update the database URL and secrets accordingly.
+
+## Use the application [**here**](https://document-query-app.streamlit.app/)
