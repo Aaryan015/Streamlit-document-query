@@ -1,6 +1,6 @@
 # Document Query Application using Streamlit 🚀
 
-## Overview📔
+## Overview📖
 This application allows users to query documents to answer their questions. It supports .pdf, .docx, and .txt formats and maintains user history, providing an option to download chat history.
 ### Use the application [**here**](https://document-query-app.streamlit.app/)
 
