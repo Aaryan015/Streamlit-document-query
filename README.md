@@ -26,7 +26,7 @@ This application allows users to query documents to answer their questions. It s
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate
    ```
-   Note: If you encounter an error like this:
+   **Note**: If you encounter an error like:
    ```
    running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
    At line:1 char:1
